@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/mai/Public/searchEngine/src/outline/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+$(OUT)	Makefile	/^$(OUT):$(OBJS) $(filter-out $(EXCLUDE_OBJS),$(SHAREDOBJS))$/;"	t
+$(SHARED)/%.o	Makefile	/^$(SHARED)\/%.o:$(SHARED)\/%.cpp$/;"	t
+%.o	Makefile	/^%.o:%.cpp$/;"	t
+CC	Makefile	/^CC:=g++$/;"	m
+DictProducer	DictProducer.cpp	/^DictProducer::DictProducer(const string& dir_eng, SplitTool *pChar)$/;"	f	class:DictProducer
+DictProducer	DictProducer.cpp	/^DictProducer::DictProducer(const string& dir_zh, SplitTool *pChar,SplitTool *pZh)$/;"	f	class:DictProducer
+DictProducer	DictProducer.h	/^class DictProducer$/;"	c
+DirScanner	DirScanner.h	/^class DirScanner$/;"	c
+EXCLUDE_OBJS	Makefile	/^EXCLUDE_OBJS:=$(SHARED)\/webquery.o$/;"	m
+FileProcessor	FileProcessor.h	/^class FileProcessor$/;"	c
+LIBS	Makefile	/^LIBS:= -llog4cpp -lpthread$/;"	m
+OBJS	Makefile	/^OBJS:=$(patsubst %.cpp, %.o, $(SRCS))$/;"	m
+OUT	Makefile	/^OUT:=..\/..\/bin\/outline$/;"	m
+PageLib	PageLib.h	/^class PageLib$/;"	c
+SHARED	Makefile	/^SHARED:=..\/shared$/;"	m
+SHAREDOBJS	Makefile	/^SHAREDOBJS:=$(patsubst $(SHARED)\/%.cpp,$(SHARED)\/%.o,$(SHAREDSRCS))$/;"	m
+SHAREDSRCS	Makefile	/^SHAREDSRCS:=$(wildcard $(SHARED)\/*.cpp)$/;"	m
+SRCS	Makefile	/^SRCS:=$(wildcard *.cpp) $/;"	m
+_DICTPRODUCER_H	DictProducer.h	/^#define _DICTPRODUCER_H$/;"	d
+_DIRSCANNER_H	DirScanner.h	/^#define _DIRSCANNER_H$/;"	d
+__FileProcessor_H__	FileProcessor.h	/^#define __FileProcessor_H__$/;"	d
+__PageLib_H__	PageLib.h	/^#define __PageLib_H__$/;"	d
+_dict	DictProducer.h	/^    vector<pair<string,size_t>> _dict;$/;"	m	class:DictProducer	typeref:typename:vector<pair<string,size_t>>
+_files	DictProducer.h	/^    vector<string> _files;$/;"	m	class:DictProducer	typeref:typename:vector<string>
+_files	DirScanner.h	/^    vector<string>_files;$/;"	m	class:DirScanner	typeref:typename:vector<string>
+_index	DictProducer.h	/^    unordered_map<string,set<size_t>> _index;$/;"	m	class:DictProducer	typeref:typename:unordered_map<string,set<size_t>>
+_pcutChar	DictProducer.h	/^    SplitTool * _pcutChar;$/;"	m	class:DictProducer	typeref:typename:SplitTool *
+_pcutChinese	DictProducer.h	/^    SplitTool * _pcutChinese;$/;"	m	class:DictProducer	typeref:typename:SplitTool *
+buildCnDict	DictProducer.cpp	/^void DictProducer::buildCnDict(){$/;"	f	class:DictProducer	typeref:typename:void
+buildDict	DictProducer.h	/^inline void DictProducer::buildDict(){$/;"	f	class:DictProducer	typeref:typename:void
+buildEnDict	DictProducer.cpp	/^void DictProducer::buildEnDict(){$/;"	f	class:DictProducer	typeref:typename:void
+clean	Makefile	/^clean:$/;"	t
+createIndex	DictProducer.cpp	/^void DictProducer::createIndex(){$/;"	f	class:DictProducer	typeref:typename:void
+getFiles	DictProducer.cpp	/^vector<string> DictProducer::getFiles(const string& dir){$/;"	f	class:DictProducer	typeref:typename:vector<string>
+getFiles	DirScanner.h	/^    vector<string>& getFiles(){return _files;};$/;"	f	class:DirScanner	typeref:typename:vector<string> &
+main	outline.cpp	/^int main()$/;"	f	typeref:typename:int
+rebuild	Makefile	/^rebuild:clean $(OUT)$/;"	t
+store	DictProducer.cpp	/^void DictProducer::store(){$/;"	f	class:DictProducer	typeref:typename:void
+test_Configuration	outline.cpp	/^void test_Configuration(){$/;"	f	typeref:typename:void
+test_DictProducer	outline.cpp	/^void test_DictProducer(){$/;"	f	typeref:typename:void
+test_Mylogger	outline.cpp	/^void test_Mylogger(){$/;"	f	typeref:typename:void
+test_SplitTool	outline.cpp	/^void test_SplitTool(){$/;"	f	typeref:typename:void
+traverse	DirScanner.cpp	/^void DirScanner::traverse(const string& dir){$/;"	f	class:DirScanner	typeref:typename:void
